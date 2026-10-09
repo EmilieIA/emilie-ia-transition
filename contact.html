@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merci | Emilie IA &amp; Transition</title>
-  <meta name="description" content="Merci pour votre message.">
-  <meta name="robots" content="noindex">
+  <title>Contact | Emilie IA &amp; Transition</title>
+  <meta name="description" content="Contactez Emilie IA &amp; Transition : formation et accompagnement IA pour les professionnels, les écoles, les familles et les seniors en Nord Alsace.">
   <link rel="icon" type="image/png" href="assets/logo_icone.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,32 +21,37 @@
         <a href="methode.html">Méthode</a>
         <a href="projets.html">Projets</a>
         <a href="a-propos.html">À propos</a>
-        <a class="btn" href="contact.html">Me contacter</a>
+        <a class="btn" href="contact.html" aria-current="page">Me contacter</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="thanks">
+    <section class="page-hero">
       <div class="wrap">
-        <div class="thanks-card">
-          <img class="thanks-avatar" src="assets/avatar-emilie.png" alt="Emilie, souriante" width="160" height="160">
-          <span class="eyebrow">Message bien reçu</span>
-          <h1>Merci, votre demande est entre de bonnes mains !</h1>
-          <p class="lead">Je la lis personnellement et je reviens vers vous sous 48 heures ouvrées, pour en parler ensemble.</p>
-          <p class="sign">Emilie</p>
+        <span class="eyebrow">Contact</span>
+        <h1>Parlons de votre besoin</h1>
+        <p class="lead">Une équipe à former, un atelier à organiser dans votre commune ou votre école, une simple question ? Quelques lignes suffisent, je vous réponds personnellement sous 48 heures ouvrées.</p>
+      </div>
+    </section>
 
-          <div class="tip">
-            <span class="tip-label">En attendant, une astuce à tester aujourd'hui</span>
-            <p>Avant de demander quoi que ce soit à une IA, écrivez-lui : <strong>« Pose-moi trois questions avant de me répondre. »</strong> Ses réponses deviendront bien plus justes, parce qu'elle partira de votre besoin, pas d'une idée générale.</p>
-            <p class="tip-moral">L'IA utile commence par un besoin, pas par un outil. Vous venez justement de faire le premier pas.</p>
-          </div>
-
-          <div class="actions">
-            <a class="btn" href="ateliers.html">Découvrir les ateliers</a>
-            <a class="btn btn-outline" href="index.html">Retour à l'accueil</a>
-          </div>
+    <section class="section">
+      <div class="wrap contact-layout">
+        <div class="form-card">
+          <iframe data-tally-src="https://tally.so/embed/KY7z2z?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="620" frameborder="0" marginheight="0" marginwidth="0" title="Formulaire de contact Emilie IA &amp; Transition"></iframe>
+          <p class="form-fallback">Le formulaire ne s'affiche pas ? <a href="https://tally.so/r/KY7z2z" target="_blank" rel="noopener">Ouvrez-le dans un nouvel onglet</a> ou écrivez-moi à <a href="mailto:emilie.combes@hotmail.com">emilie.combes@hotmail.com</a>.</p>
         </div>
+        <aside class="contact-aside">
+          <img src="assets/avatar-emilie.png" alt="Emilie, souriante" width="110" height="110">
+          <h2>Ce qui se passe ensuite</h2>
+          <ol>
+            <li>Je lis votre demande personnellement.</li>
+            <li>Je vous recontacte sous 48 heures ouvrées.</li>
+            <li>On échange 20 minutes pour cerner votre besoin, sans engagement.</li>
+          </ol>
+          <p class="aside-place">Outre-Forêt, Nord Alsace (Bas-Rhin)<br>Interventions sur site et à distance</p>
+          <a class="btn btn-outline" href="https://www.linkedin.com/company/emilie-ia-transition/" target="_blank" rel="noopener">Suivre sur LinkedIn</a>
+        </aside>
       </div>
     </section>
   </main>
@@ -81,5 +85,7 @@
     });
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   </script>
+  <script async src="https://tally.so/widgets/embed.js" onload="Tally.loadEmbeds()"></script>
+  <script>document.querySelectorAll("iframe[data-tally-src]").forEach(function(f){ if(!f.src) setTimeout(function(){ if(!f.src) f.src=f.dataset.tallySrc; }, 1500); });</script>
 </body>
 </html>
