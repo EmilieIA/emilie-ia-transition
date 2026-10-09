@@ -235,3 +235,25 @@ p { margin: 0; }
   .site-footer .wrap { grid-template-columns: 1fr; }
   .site-footer .links { align-items: flex-start; }
 }
+
+/* Article */
+.article .wrap { max-width: 780px; }
+.article h2 { font-size: clamp(23px, 2.8vw, 28px); margin: 44px 0 14px; padding-left: 16px; border-left: 4px solid var(--terracotta); }
+.article p { color: var(--ink-soft); font-size: 17.5px; line-height: 1.7; }
+.article p + p { margin-top: 14px; }
+.article-figure { margin: 0 0 8px; display: flex; gap: 20px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+.article-figure img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--terracotta); object-fit: cover; flex: none; }
+.article-figure figcaption { color: var(--ink-soft); font-style: italic; font-size: 15.5px; }
+.article-steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 14px; }
+.article-steps li { position: relative; padding: 16px 18px 16px 64px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); color: var(--ink-soft); font-size: 16.5px; }
+.article-steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 16px; top: 14px; width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--terracotta); color: var(--terracotta); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.article-steps strong, .article-list strong { color: var(--navy); }
+.article-list { margin: 14px 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.article-list li { position: relative; padding-left: 20px; color: var(--ink-soft); font-size: 17px; }
+.article-list li::before { content: ''; position: absolute; left: 0; top: 12px; width: 9px; height: 2px; background: var(--terracotta); }
+.article-quote { margin: 40px 0 0; padding: 22px 26px; background: var(--navy); color: #fff; border-left: 4px solid var(--terracotta); border-radius: var(--radius); font-size: 20px; font-weight: 700; line-height: 1.45; }
+.article-actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+.project.featured .photo img[src*="bobine"] { object-fit: contain; background: #3a2a1a; }
+@media (max-width: 760px) {
+  .article-figure { flex-direction: column; text-align: center; }
+}
