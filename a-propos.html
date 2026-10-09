@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos | Emilie IA &amp; Transition</title>
+  <meta name="description" content="Emilie Combes, fondatrice d'Emilie IA & Transition, spécialiste des usages de l'IA et de leur appropriation.">
+  <link rel="icon" type="image/png" href="assets/logo_icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Emilie IA & Transition, accueil"><img src="assets/logo_horizontal.png" alt="Emilie IA & Transition"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav">
+        <a href="offres.html">Offres</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="methode.html">Méthode</a>
+        <a href="projets.html">Projets</a>
+        <a href="a-propos.html" aria-current="page">À propos</a>
+        <a class="btn" href="#contact">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">À propos</span>
+        <h1>Une spécialiste des usages, pas une ingénieure</h1>
+        <p class="lead">Quinze ans de digital, l'expérience de l'enseignement et la culture du Kaizen, au service d'une IA accessible.</p>
+      </div>
+    </section>
+
+    <section class="section" id="a-propos" style="background:var(--surface)">
+      <div class="wrap about">
+        <figure class="portrait" style="margin:0">
+          <img src="assets/portrait-emilie.jpg" alt="Emilie Combes, souriante, bras croisés" width="480" height="600" loading="lazy">
+        </figure>
+        <div class="text">
+          <span class="eyebrow">Qui je suis</span>
+          <h2 style="font-size:clamp(28px,3.6vw,38px);margin-bottom:22px">Emilie Combes, fondatrice</h2>
+          <p>Pendant une quinzaine d'années, j'ai travaillé dans le digital, la publicité et la coordination de projets, chez Rakuten-PriceMinister puis auprès des PME du bâtiment. C'est une entreprise japonaise qui m'a transmis le Kaizen, cette culture de l'amélioration continue qui guide encore ma façon de travailler.</p>
+          <p>J'ai aussi enseigné en maternelle et en élémentaire, et donné des cours de danse. Transmettre, rassurer, rendre les choses simples : c'est ce fil-là que je tire aujourd'hui avec l'IA.</p>
+          <p>Je suis installée en Nord Alsace, dans l'Outre-Forêt. Une entreprise de proximité, pour une expertise accessible plutôt qu'une grande agence distante.</p>
+          <p class="signature">« Je ne suis pas ingénieure en intelligence artificielle : je suis spécialiste de ses usages et de leur appropriation. »</p>
+          <div class="creds">
+            <span class="pill">Master ESC Dijon</span>
+            <span class="pill">15 ans de marketing digital</span>
+            <span class="pill">Enseignement primaire</span>
+            <span class="pill">Certificat Voltaire</span>
+            <span class="pill">Anglais courant, allemand</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h2>Parlons de votre besoin</h2>
+        <p>Une équipe à former, un atelier à organiser dans votre commune ou votre école, une simple question ? Écrivez-moi, je vous réponds personnellement.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:emilie.combes@hotmail.com?subject=Demande%20d'information%20Emilie%20IA%20%26%20Transition">Écrire un e-mail</a>
+          <a class="btn btn-light" href="https://www.linkedin.com/company/emilie-ia-transition/" target="_blank" rel="noopener">Suivre sur LinkedIn</a>
+        </div>
+        <p class="place">Outre-Forêt, Nord Alsace (Bas-Rhin) · Interventions sur site et à distance</p>
+      </div>
+    </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <img src="assets/logo_horizontal_blanc.png" alt="Emilie IA & Transition">
+        <p>Des ressources pédagogiques pour comprendre ce que l'intelligence artificielle change concrètement dans la vie de tous les jours, sans jargon ni promesse démesurée.</p>
+      </div>
+      <div class="links">
+        <a href="mailto:emilie.combes@hotmail.com">emilie.combes@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/emilie-combes-francais/" target="_blank" rel="noopener">LinkedIn d'Emilie</a>
+        <a href="mentions-legales.html">Mentions légales et confidentialité</a>
+        <span>© 2026 Emilie IA &amp; Transition</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const bar = document.getElementById('progress');
+    addEventListener('scroll', () => {
+      const h = document.documentElement;
+      bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+    }, { passive: true });
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
