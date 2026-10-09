@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merci | Emilie IA &amp; Transition</title>
+  <meta name="description" content="Merci pour votre message.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="assets/logo_icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Emilie IA & Transition, accueil"><img src="assets/logo_horizontal.png" alt="Emilie IA & Transition"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav">
+        <a href="offres.html">Offres</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="methode.html">Méthode</a>
+        <a href="projets.html">Projets</a>
+        <a href="a-propos.html">À propos</a>
+        <a class="btn" href="index.html#contact">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="thanks">
+      <div class="wrap">
+        <div class="thanks-card">
+          <img class="thanks-avatar" src="assets/avatar-emilie.png" alt="Emilie, souriante" width="160" height="160">
+          <span class="eyebrow">Message bien reçu</span>
+          <h1>Merci, votre demande est entre de bonnes mains !</h1>
+          <p class="lead">Je la lis personnellement et je reviens vers vous sous 48 heures ouvrées, pour en parler ensemble.</p>
+          <p class="sign">Emilie</p>
+
+          <div class="tip">
+            <span class="tip-label">En attendant, une astuce à tester aujourd'hui</span>
+            <p>Avant de demander quoi que ce soit à une IA, écrivez-lui : <strong>« Pose-moi trois questions avant de me répondre. »</strong> Ses réponses deviendront bien plus justes, parce qu'elle partira de votre besoin, pas d'une idée générale.</p>
+            <p class="tip-moral">L'IA utile commence par un besoin, pas par un outil. Vous venez justement de faire le premier pas.</p>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="ateliers.html">Découvrir les ateliers</a>
+            <a class="btn btn-outline" href="index.html">Retour à l'accueil</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <img src="assets/logo_horizontal_blanc.png" alt="Emilie IA & Transition">
+        <p>Des ressources pédagogiques pour comprendre ce que l'intelligence artificielle change concrètement dans la vie de tous les jours, sans jargon ni promesse démesurée.</p>
+      </div>
+      <div class="links">
+        <a href="mailto:emilie.combes@hotmail.com">emilie.combes@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/emilie-combes-francais/" target="_blank" rel="noopener">LinkedIn d'Emilie</a>
+        <a href="mentions-legales.html">Mentions légales et confidentialité</a>
+        <span>© 2026 Emilie IA &amp; Transition</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const bar = document.getElementById('progress');
+    addEventListener('scroll', () => {
+      const h = document.documentElement;
+      bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+    }, { passive: true });
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
