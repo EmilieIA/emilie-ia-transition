@@ -307,3 +307,35 @@ p { margin: 0; }
 @media (max-width: 560px) { .crm-card dl { grid-template-columns: 1fr; gap: 2px; } .crm-card dd { margin-bottom: 10px; } }
 .project .photo:has(img[src*="zap-"]) { position: relative; overflow: hidden; min-height: 260px; background: #F7F6F3; }
 .project .photo img[src*="zap-"] { position: absolute; inset: 0; height: 100%; min-height: 0; object-fit: cover; object-position: center top; }
+
+/* Schéma grand public de l'automatisation */
+.flow { margin: 30px 0; padding: 24px; background: var(--navy); border-radius: var(--radius); color: #fff; }
+.flow-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; position: relative; }
+.flow-step { position: relative; background: #fff; color: var(--ink); border-radius: var(--radius); border-top: 3px solid var(--terracotta); padding: 18px 14px 16px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.flow-step:not(:last-child)::after { content: ""; position: absolute; right: -12px; top: 50px; width: 10px; height: 10px; border-top: 3px solid var(--terracotta); border-right: 3px solid var(--terracotta); transform: rotate(45deg); }
+.flow-num { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); width: 26px; height: 26px; border-radius: 50%; background: var(--terracotta); color: #fff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.flow-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--pale); color: var(--navy); display: flex; align-items: center; justify-content: center; margin-top: 4px; }
+.flow-icon svg { width: 30px; height: 30px; }
+.flow-ai .flow-icon { background: var(--rose); color: var(--terracotta); }
+.flow-who { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--terracotta); }
+.flow-step strong { color: var(--navy); font-size: 16px; line-height: 1.25; }
+.flow-text { color: var(--ink-soft); font-size: 14px; line-height: 1.45; }
+.flow-band { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.flow-band span { border-left: 4px solid var(--terracotta); padding: 4px 0 4px 12px; font-size: 14px; color: #DDEAF2; line-height: 1.4; }
+.flow-band strong { display: block; color: #fff; font-size: 16px; }
+.flow figcaption { margin-top: 14px; color: #DDEAF2; font-style: italic; font-size: 14.5px; }
+@media (max-width: 860px) {
+  .flow-steps { grid-template-columns: 1fr; gap: 22px; }
+  .flow-step { display: grid; grid-template-columns: 56px 1fr; column-gap: 14px; text-align: left; align-items: start; padding: 18px 16px 14px; }
+  .flow-icon { grid-row: 1 / span 3; margin-top: 0; }
+  .flow-num { left: 16px; transform: none; }
+  .flow-step:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -17px; transform: translateX(-50%) rotate(135deg); }
+  .flow-band { grid-template-columns: 1fr; }
+}
+@media (min-width: 861px) {
+  .flow-header { width: min(1120px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); margin-top: 0; padding: 30px 28px; }
+  .flow-header .flow-steps { gap: 22px; }
+  .flow-header .flow-step:not(:last-child)::after { right: -16px; }
+}
+.project .photo:has(img[src*="schema-"]) { background: var(--navy); display: flex; align-items: center; }
+.project .photo img[src*="schema-"] { height: auto; min-height: 0; object-fit: contain; }
