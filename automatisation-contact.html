@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Étude de cas : automatiser les demandes de contact | Emilie IA &amp; Transition</title>
+  <meta name="description" content="Étude de cas : comment Emilie IA &amp; Transition a automatisé son formulaire de contact avec Tally, Zapier, l'IA, Notion et Outlook.">
+  <link rel="icon" type="image/png" href="assets/logo_icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Emilie IA & Transition, accueil"><img src="assets/logo_horizontal.png" alt="Emilie IA & Transition"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav">
+        <a href="offres.html">Offres</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="methode.html">Méthode</a>
+        <a href="projets.html" aria-current="page">Projets</a>
+        <a href="a-propos.html">À propos</a>
+        <a class="btn" href="contact.html">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Projets · Étude de cas</span>
+        <h1>Une demande de contact traitée en quelques secondes, sans rien oublier</h1>
+        <p class="lead">Comment j'ai automatisé le formulaire de contact de ce site avec Tally, Zapier, l'IA, Notion et Outlook. Un exemple concret de ce que l'automatisation peut faire pour une petite structure.</p>
+      </div>
+    </section>
+
+    <article class="section article">
+      <div class="wrap">
+        <h2>Le point de départ</h2>
+        <p>Une demande de contact, c'est souvent un futur client. Pourtant, quand on travaille seule, elle se perd vite : un mail lu entre deux rendez-vous, une réponse remise à plus tard, une information notée sur un coin de cahier.</p>
+        <p>Je voulais trois choses : que la personne sache tout de suite que sa demande est bien arrivée, que je comprenne son besoin d'un coup d'œil, et que rien ne se perde.</p>
+
+        <h2>Ce qui se passe quand vous remplissez le formulaire</h2>
+        <ol class="article-steps">
+          <li><strong>Le formulaire (Tally).</strong> Vous indiquez qui vous êtes, votre structure et votre besoin, en donnant votre accord pour être recontacté.</li>
+          <li><strong>Le résumé (IA).</strong> Une IA lit la demande, la résume en deux phrases simples et propose l'offre qui correspond le mieux : Pro, Junior, Déclic &amp; Sérénité ou un atelier. Elle a une consigne claire : ne rien inventer.</li>
+          <li><strong>La fiche (Notion).</strong> Une fiche se crée toute seule dans mon tableau de suivi, avec le résumé, l'offre suggérée et le statut « Nouveau ».</li>
+          <li><strong>L'accusé de réception (Outlook).</strong> Vous recevez un message personnalisé, avec votre prénom, qui confirme que je vous réponds sous 48 heures ouvrées.</li>
+          <li><strong>L'alerte (Outlook).</strong> Je reçois un mail avec l'essentiel : qui, pour quoi, et l'offre à préparer.</li>
+        </ol>
+
+        <figure class="article-shot">
+          <img src="assets/zap-demande-contact.png" alt="Le scénario Zapier en cinq étapes : Tally, AI by Zapier, Notion, puis deux envois Microsoft Outlook" width="806" height="1420" loading="lazy">
+          <figcaption>Le scénario complet dans Zapier : cinq étapes, déclenchées à chaque nouvelle demande.</figcaption>
+        </figure>
+
+        <h2>Le résultat, sur un exemple de test</h2>
+        <p>Pour tester, j'ai joué le rôle d'une boulangère fictive qui souhaite former son équipe de cinq personnes à ChatGPT. Voici ce que le système a produit, sans aucune intervention de ma part.</p>
+        <div class="crm-card" role="figure" aria-label="Exemple de fiche créée automatiquement dans Notion">
+          <div class="crm-head"><strong>Julie Martin</strong><span class="crm-tag">Nouveau</span></div>
+          <dl>
+            <dt>Organisation</dt><dd>Boulangerie Martin, Wissembourg</dd>
+            <dt>Profil</dt><dd>Entreprise / indépendant</dd>
+            <dt>Offre suggérée</dt><dd><span class="crm-offer">Emilie IA Pro</span></dd>
+            <dt>Résumé IA</dt><dd>L'équipe de cinq personnes souhaite apprendre à utiliser ChatGPT. Elle veut gagner du temps sur les devis, les mails clients et les publications Facebook.</dd>
+          </dl>
+          <p class="crm-note">Fiche créée automatiquement dans Notion (données fictives de test).</p>
+        </div>
+        <figure class="article-shot">
+          <img src="assets/zap-accuse-reception.png" alt="E-mail reçu : Bonjour Julie, merci pour votre message, je l'ai bien reçu. Je le lis personnellement et je reviens vers vous sous 48 heures ouvrées." width="1404" height="470" loading="lazy">
+          <figcaption>L'accusé de réception, personnalisé avec le prénom, arrive quelques secondes après l'envoi du formulaire.</figcaption>
+        </figure>
+
+        <h2>Ce que j'en retiens</h2>
+        <ul class="article-list">
+          <li><strong>L'IA prépare, l'humain décide.</strong> L'IA résume et propose une offre, mais c'est moi qui lis chaque demande et qui réponds personnellement.</li>
+          <li><strong>Le diable est dans les détails.</strong> Le bon formulaire, la bonne base, les bons champs : la plupart des blocages venaient d'un réglage, pas de l'IA.</li>
+          <li><strong>Tester avec un vrai cas.</strong> Un exemple réaliste montre tout de suite si le résumé et l'offre ont du sens.</li>
+          <li><strong>Le minimum de données.</strong> L'IA ne reçoit que ce dont elle a besoin pour résumer, pas le téléphone ni l'adresse e-mail.</li>
+        </ul>
+
+        <blockquote class="article-quote">Automatiser, ce n'est pas remplacer la relation. C'est libérer du temps pour elle.</blockquote>
+
+        <h2>Et pour vous ?</h2>
+        <p>Devis, prises de rendez-vous, relances, réponses aux questions fréquentes : beaucoup de petites tâches répétitives peuvent être automatisées avec des outils simples et abordables. Dans mes accompagnements Emilie IA Pro, nous repérons ensemble celles qui vous font perdre du temps, puis nous construisons une première automatisation, testée sur vos vrais cas.</p>
+        <div class="article-actions">
+          <a class="btn" href="offres.html">Découvrir Emilie IA Pro</a>
+          <a class="btn btn-outline" href="projets.html">Retour aux projets</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h2>Parlons de votre besoin</h2>
+        <p>Une équipe à former, un atelier à organiser dans votre commune ou votre école, une simple question ? Écrivez-moi, je vous réponds personnellement.</p>
+        <div class="actions">
+          <a class="btn" href="contact.html">Remplir le formulaire</a>
+          <a class="btn btn-light" href="mailto:emilie.combes@hotmail.com">Écrire un e-mail</a>
+          <a class="btn btn-light" href="https://www.linkedin.com/company/emilie-ia-transition/" target="_blank" rel="noopener">Suivre sur LinkedIn</a>
+        </div>
+        <p class="place">Outre-Forêt, Nord Alsace (Bas-Rhin) · Interventions sur site et à distance</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <img src="assets/logo_horizontal_blanc.png" alt="Emilie IA & Transition">
+        <p>Des ressources pédagogiques pour comprendre ce que l'intelligence artificielle change concrètement dans la vie de tous les jours, sans jargon ni promesse démesurée.</p>
+      </div>
+      <div class="links">
+        <a href="mailto:emilie.combes@hotmail.com">emilie.combes@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/emilie-combes-francais/" target="_blank" rel="noopener">LinkedIn d'Emilie</a>
+        <a href="mentions-legales.html">Mentions légales et confidentialité</a>
+        <span>© 2026 Emilie IA &amp; Transition</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const bar = document.getElementById('progress');
+    addEventListener('scroll', () => {
+      const h = document.documentElement;
+      bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+    }, { passive: true });
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
