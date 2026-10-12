@@ -339,3 +339,9 @@ p { margin: 0; }
 }
 .project .photo:has(img[src*="schema-"]) { background: var(--navy); display: flex; align-items: center; }
 .project .photo img[src*="schema-"] { height: auto; min-height: 0; object-fit: contain; }
+.article-prompt { margin: 18px 0; padding: 18px 20px; background: var(--navy); color: #F7F4EE; border-left: 4px solid var(--terracotta); border-radius: var(--radius); font: 15px/1.6 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.article-faq { display: flex; flex-direction: column; gap: 10px; }
+.article-faq details { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; }
+.article-faq summary { cursor: pointer; font-weight: 700; color: var(--navy); font-size: 17px; }
+.article-faq summary::marker { color: var(--terracotta); }
+.article-faq details p { margin-top: 10px; }
